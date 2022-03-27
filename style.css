@@ -1,10 +1,7 @@
 /* TO DO STILL:
 Finish Nav Bar
-Finish Title Bar
-Round Out Corners
 Add SEO Graphic
 Add Footer
-Fix text for What We Offer
 */
 * {
     box-sizing: border-box;
@@ -71,6 +68,15 @@ li {
     font-weight: 600;
     font-size: 28px;
     color: #000000;
+    margin-right: 20px;
+}
+
+li a{
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding: 1rem;     
+    margin: -1rem; 
 }
 
 a:link, a:visited{
@@ -78,10 +84,13 @@ a:link, a:visited{
     color: #000000;
 }
 
+li a:hover {
+    background-color: #58585879;
+}
+
 main {
     grid-column: 2 / 11;
 }
-
 
 /* Id's */
 
@@ -120,8 +129,8 @@ main {
 #titlebox{
     height: auto;
     grid-row: 3 / 5;
-    grid-column: 2 / 4;
-    width: fit-content;
+    grid-column: 2 / 7;
+    /* width: fit-content; */
     z-index: 1;
     background-color: rgba(229, 229, 229, 0.58);
 }
@@ -130,9 +139,24 @@ main {
     padding: 20px;
     margin: 0px;
     color: black;
+    text-align: center;
 }
 
-/* CONTAINER FOR INTERACTICE ITEMS */
+#titlebox h1 {
+    font-family: Lato, sans-serif;
+    font-weight: 800;
+    font-size: 95px;
+    padding-bottom: 0px;
+    text-shadow: rgba(0, 0, 0, 0.46) 1px 1px;
+}
+
+#titlebox h2 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+/* CONTAINER FOR INTERACTIVE ITEMS */
 #interactivebuttons{
     flex-direction: row;
     grid-column: 2 / 12;
@@ -167,6 +191,7 @@ main {
 /* COMPREHENSIVE SECTION*/
 #comprehensive{
     background-color: #d63a26;
+    border-radius: 10px 0 0 10px;
     height: 276px;
     width: 320px;
     margin: 0px;
@@ -200,9 +225,10 @@ main {
     margin-top: 17px;
 }
 
-/* TARGETED SECTION */
+/* TARGETED CONTAINER */
 #targeted {
     background-color: #d63a26;
+    border-radius: 0px 10px 10px 0px;
     height: 276px;
     width: 320px;
     margin: 0px;
@@ -225,23 +251,34 @@ main {
     margin-top: 100px;
     text-align: right;
     color: #000000;
-    
+    font-family: Lato, sans-serif;
 }
 
 #whatweoffer p{
     color: #000000;
+    font-weight: 400;
 }
 
 #whatweoffer h3{
     color: #D63A26;
+    font-family: Dosis, sans-serif;
+    font-weight: 700;
 }
 
+#whatweoffer h1{
+    font-weight: 700;
+    margin-top: 0px;
+}
 /* SEO INFOGRAPGIC MEDIA QUERY*/
 #seographic {
     grid-column: 8 / 12;
     grid-row: 9;
     margin-top: 100px;
     background-color: #FFFFFF;
+    background-image: url("imageonline-co-linechart.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* CONTAINTER FOR INQUIRY LINK */
@@ -249,6 +286,7 @@ main {
     grid-column: 5 / 9;
     grid-row: 10 / 11;
     background-color: #f24535;
+    border-radius: 10px;
     height: 75px;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -259,6 +297,11 @@ main {
     font-family: Exo, sans-serif;
     font-weight: 700;
     font-size: 40px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    margin: -2em;
 }
 
 /*CLASSES*/
@@ -274,6 +317,7 @@ main {
     height: 75px;
 }
 
+/* FOR LINK IN THE NAV MENU */
 .freeinquiry{
     font-weight: 800;
     font-size: 32px;
