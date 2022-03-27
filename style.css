@@ -1,3 +1,11 @@
+/* TO DO STILL:
+Finish Nav Bar
+Finish Title Bar
+Round Out Corners
+Add SEO Graphic
+Add Footer
+Fix text for What We Offer
+*/
 * {
     box-sizing: border-box;
 }
@@ -115,6 +123,26 @@ main {
     margin: 0px;
 }
 
+#interactivebuttons p{
+    font-family: Exo, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#interactivebuttons h2{
+    font-family: Lato, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
 #comprehensive, #personalized, #targeted {
     float:left
 }
@@ -125,23 +153,6 @@ main {
     width: 320px;
     margin: 0px;
     position: relative;
-}
-
-#comprehensive h2, p{
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-#comprehensive p{
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: baseline;
 }
 
 #layoutgraphic{
@@ -171,15 +182,6 @@ main {
     margin-top: 17px;
 }
 
-#personalized h2, p{
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
 /* TARGETED SECTION */
 #targeted {
     background-color: #d63a26;
@@ -196,15 +198,6 @@ main {
     background-position: center;
     height: 78.2px;
     margin-top: 17px;
-}
-
-#targeted h2, p{
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
 }
 
 /* CONTAINER FOR INFORMATIONAL TEXT ABOUT THE COMPANY AND SERVICES */
@@ -248,9 +241,15 @@ main {
     font-family: Exo, sans-serif;
     font-weight: 700;
     font-size: 40px;
-    text-align: center; 
 }
 
 .clear {
-  clear: both;
+    clear: both;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
 }
