@@ -1,7 +1,6 @@
 /* TO DO STILL:
-Finish Nav Bar
-Add SEO Graphic
-Add Footer
+ADD TRANSITION TO INTERACTIVE BUTTONS
+CLEANUP AND OPTIMIZE FOR MOBILE FORMATTING
 */
 * {
     box-sizing: border-box;
@@ -20,7 +19,7 @@ body {
 header{ 
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    height: 75px;
+    /*height: 75px;*/
     z-index: 2;
     font-family: Exo, sans-serif;
     color: #000000;
@@ -28,7 +27,7 @@ header{
 
 header h1{
     display: flex;
-    height: 75px;
+    height: 2em;
     align-items: center;
     margin: 0px;
 }
@@ -37,15 +36,20 @@ header h1{
 h1 a{
     font-weight: 300;
     font-size: 32px;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 
 /* CONTAINER FOR UL */
 nav {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    height: 75px;
+    /*height: 75px;*/
     z-index: 2;
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* HOLDS NAVIGATION MENU */
@@ -62,21 +66,18 @@ li {
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    padding-right: 10px;
-    padding-left: 10px;
     font-family: Dosis, sans-serif;
     font-weight: 600;
     font-size: 28px;
     color: #000000;
-    margin-right: 20px;
+    /*padding: 10px;*/
 }
 
 li a{
     display: inline-block;     
-    position: relative;    
-    z-index: 1;     
-    padding: 1rem;     
-    margin: -1rem; 
+    position: relative;
+    padding: .5em;    
+    z-index: 1;
 }
 
 a:link, a:visited{
@@ -112,7 +113,7 @@ footer {
 #menubar {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    height: 75px;
+    /*height: 75px;*/
     background-color: rgba(229, 229, 229, 0.58);
     z-index: 1;
 }
@@ -339,7 +340,7 @@ footer {
 /* FOR LINK IN THE NAV MENU */
 .freeinquiry{
     font-weight: 800;
-    font-size: 32px;
+    font-size: 28px;
     color: #d63a26;
 }
 
