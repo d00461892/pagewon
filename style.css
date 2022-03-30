@@ -192,6 +192,10 @@ footer {
 #comprehensive, #personalized, #targeted {
     float:left
 }
+
+#comprehensive:hover, #personalized:hover, #targeted:hover {
+    background: #dd6b5c;
+}
 /* COMPREHENSIVE SECTION*/
 #comprehensive{
     background-color: #d63a26;
@@ -200,11 +204,7 @@ footer {
     width: 320px;
     margin: 0px;
     position: relative;
-    transition: background-color .5s ease-out;
-}
-
-#comprehensive:hover, #personalized:hover, #targeted:hover {
-    background: #dd6b5c;
+    transition: background-color .25s ease-in-out;
 }
 
 #layoutgraphic{
@@ -223,7 +223,7 @@ footer {
     width: 320px;
     margin: 0px;
     position: relative;
-    transition: background-color .5s ease-in-out;
+    transition: background-color .25s ease-in-out;
 }
 
 #persongraphic{
@@ -243,7 +243,7 @@ footer {
     width: 320px;
     margin: 0px;
     position: relative;
-    transition: background-color .5s ease-out;
+    transition: background-color .25s ease-in-out;
 }
 
 #targetgraphic{
