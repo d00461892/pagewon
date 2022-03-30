@@ -200,6 +200,7 @@ footer {
     width: 320px;
     margin: 0px;
     position: relative;
+    transition: background-color .5s ease-out;
 }
 
 #comprehensive:hover, #personalized:hover, #targeted:hover {
@@ -222,6 +223,7 @@ footer {
     width: 320px;
     margin: 0px;
     position: relative;
+    transition: background-color .5s ease-in-out;
 }
 
 #persongraphic{
@@ -241,6 +243,7 @@ footer {
     width: 320px;
     margin: 0px;
     position: relative;
+    transition: background-color .5s ease-out;
 }
 
 #targetgraphic{
