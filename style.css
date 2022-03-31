@@ -346,3 +346,16 @@ footer {
 .freeinquiry a:link{
     color: #d63a26;
 }
+
+/* START OF MOBILE STYLING*/
+@media only screen and (max-width:992px){ 
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 768px)) minmax(0px, 1fr);
+    }
+}
+
+@media only screen and (max-width:768px){ 
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 100%)) minmax(0px, 1fr);
+    }
+}
