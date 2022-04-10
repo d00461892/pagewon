@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700;800&family=Exo:wght@300;400;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <div id="wrapper">
@@ -28,6 +29,30 @@
                 <li><a href="aboutus.html">ABOUT US</a></li>
                 <li class="freeinquiry"><a href="inquiry.html">FREE INQUIRY</a></li>
             </ul>
+            <div class="topnav">
+                <a href="#home" class="active">PAGE WON SEO</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                  <a href="index.html">HOME</a>
+                  <a href="services.html">SERVICES</a>
+                  <a href="aboutus.html">ABOUT US</a>
+                  <a class="freeinquiry" href="inquiry.html">FREE INQUIRY</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+              <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
         </nav>
         <div id="titlebox">
                 <h1>Page Won</h1>
