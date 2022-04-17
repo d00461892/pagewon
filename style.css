@@ -179,6 +179,16 @@ footer {
     background-position: center;
 }
 
+#aboutushero {
+    height: 450px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 7;
+    background-image: url("homehero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* TITLE BOX THAT GOES OVER HERO IMAGE*/
 #titlebox{
     height: auto;
@@ -249,7 +259,7 @@ footer {
 #comprehensive{
     background-color: #d63a26;
     border-radius: 10px 0 0 10px;
-    height: 276px;
+    height: auto;
     width: 320px;
     margin: 0px;
     position: relative;
@@ -268,7 +278,7 @@ footer {
 /* PERSONALIZED SECTION */
 #personalized{
     background-color: #d63a26;
-    height: 276px;
+    height: auto;
     width: 320px;
     margin: 0px;
     position: relative;
@@ -288,7 +298,7 @@ footer {
 #targeted {
     background-color: #d63a26;
     border-radius: 0px 10px 10px 0px;
-    height: 276px;
+    height: auto;
     width: 320px;
     margin: 0px;
     position: relative;
@@ -315,21 +325,32 @@ footer {
     font-family: Lato, sans-serif;
 }
 
-#whatweoffer p{
+#whatweoffer p, #aboutus p{
     color: #000000;
     font-weight: 400;
 }
 
-#whatweoffer h3{
+#whatweoffer h3, #aboutus h3{
     color: #D63A26;
     font-family: Dosis, sans-serif;
     font-weight: 700;
 }
 
-#whatweoffer h1{
+#whatweoffer h1, #aboutus h1{
     font-weight: 700;
     margin-top: 0px;
 }
+
+#aboutus {
+    grid-column: 3 / 11;
+    grid-row: 9;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: left;
+    color: #000000;
+    font-family: Lato, sans-serif;
+}
+
 /* SEO INFOGRAPGIC MEDIA QUERY*/
 #seographic {
     grid-column: 8 / 12;
@@ -404,6 +425,8 @@ footer {
     #comprehensive, #personalized, #targeted {
         height: auto;
         width: 33.33%;
+        max-height: 330px;
+        min-height: 330px;
     }
 
     #titlebox{
@@ -449,6 +472,8 @@ footer {
         height: auto;
         width: 100%;
         border-radius: 10px 10px;
+        margin-top: 10px;
+        min-height: 0px;
     }
 
     #whatweoffer {
