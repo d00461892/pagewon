@@ -408,7 +408,7 @@ footer {
     color: #d63a26;
 }
 
-.freeinquiry a:link{
+.freeinquiry a:link, .freeinquiry a:visited{
     color: #d63a26;
 }
 
