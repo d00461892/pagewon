@@ -84,6 +84,80 @@ a:link, a:visited {
 li a:hover {
     background-color: #58585879;
 }
+/*
+form {
+    display: grid;
+    grid-template-rows: minmax( 0px, auto);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+label, input, select, option, textarea {
+    font-family: Dosis, sans-serif;
+    font-size: 28px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+*/
+
+form {
+    grid-column: 3 / 7;
+    grid-row: 7 / 10;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+label {
+    font-family: Dosis, sans-serif;
+    font-size: 24px;
+}
+
+#yourname, #email, #phonenumber, #companyname, #websiteurl, #comments{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 2rem;
+    width: 90%;
+    font-family: Exo, sans-serif;
+}
+
+#comments{
+    height: 2.5rem;
+}
+
+::placeholder{
+    color: #00000062;
+}
+
+#submit {
+    background-color: #f24535;
+    border-radius: 10px;
+    height: 1.5em;
+    width: 50%;
+    font-size: 3em;
+    color: #FFFFFF;
+    font-family: Exo, sans-serif;
+    font-weight: 700;
+    border: none;
+    transition: background-color .25s ease-in-out;
+    margin-top: .5em;
+    min-width: 170px;
+}
+
+#submit:hover {
+    background-color: #dd6b5c;
+    border-radius: 10px;
+}
+
+#inquiryparagraph {
+    grid-column: 7 / 11;
+    padding-left: 2em;
+}
+
+#inquiryparagraph h3 {
+    color: #D63A26;
+    font-family: Dosis, sans-serif;
+    font-weight: 700;
+}
 
 /* Style the navigation menu */
 .topnav {
@@ -325,18 +399,18 @@ footer {
     font-family: Lato, sans-serif;
 }
 
-#whatweoffer p, #aboutus p{
+#whatweoffer p, #aboutus p, #inquiryparagraph p{
     color: #000000;
     font-weight: 400;
 }
 
-#whatweoffer h3, #aboutus h3{
+#whatweoffer h3, #aboutus h3, #inquiryparagraph h3{
     color: #D63A26;
     font-family: Dosis, sans-serif;
     font-weight: 700;
 }
 
-#whatweoffer h1, #aboutus h1{
+#whatweoffer h1, #aboutus h1, #inquiryparagraph h1{
     font-weight: 700;
     margin-top: 0px;
 }
@@ -381,6 +455,7 @@ footer {
     width: 100%;
     text-align: center;
     line-height: 2em;
+    transition: background-color .25s ease-in-out;
 }
 
 #inquirybutton a:hover {
