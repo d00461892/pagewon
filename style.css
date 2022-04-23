@@ -84,20 +84,6 @@ a:link, a:visited {
 li a:hover {
     background-color: #58585879;
 }
-/*
-form {
-    display: grid;
-    grid-template-rows: minmax( 0px, auto);
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-label, input, select, option, textarea {
-    font-family: Dosis, sans-serif;
-    font-size: 28px;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-}
-*/
 
 form {
     grid-column: 3 / 7;
@@ -418,7 +404,7 @@ footer {
 #aboutus {
     grid-column: 3 / 11;
     grid-row: 9;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 100px;
     text-align: left;
     color: #000000;
@@ -563,6 +549,18 @@ footer {
 
     footer {
         grid-column: 1 / -1;
+    }
+    form {
+        grid-column: 3 / 11;
+        grid-row: 10 / 13;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    #inquiryparagraph {
+        grid-column: 3 / 11;
+        padding-left: 0px;
+        grid-row: 7 / 10;
     }
 }
 
